@@ -62,7 +62,7 @@ namespace OhScrap
             {
                 doNotRecover = true;
                 //ScreenMessages.PostScreenMessage(part.partInfo.title + " will not be recovered");
-                ScreenMessages.PostScreenMessage(Localizer.Format("#OHS-UPFME-recovered", part.partInfo.title));
+                ScreenMessages.PostScreenMessage(Localizer.Format("#OHS-UPFME-notrecovered", part.partInfo.title));
             }
             else
             {
@@ -158,6 +158,7 @@ namespace OhScrap
                             continue;
                         }
                     }
+                    
                     else continue;
                 }
             }
